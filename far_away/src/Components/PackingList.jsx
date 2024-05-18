@@ -8,7 +8,7 @@ const PackingList = () => {
       <h1 className="uppercase underline font-medium text-lg text-center text-white">
         Lists
       </h1>
-      <ul className="grid grid-cols-4 gap-4 m-10">
+      <ul className="grid grid-cols-4 gap-4 m-10 justify-items-center">
         {initialItems.map((item) => (
           <Item key={item.id} item={item} />
         ))}
