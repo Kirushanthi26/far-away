@@ -1,6 +1,6 @@
 import React from "react";
 
-const Item = ({ item }) => {
+const Item = ({ item, onDeleteItems }) => {
   return (
     <li className="flex">
       <h5
@@ -10,7 +10,7 @@ const Item = ({ item }) => {
       >
         {item.quantity} {item.description}
       </h5>
-      <button>❌</button>
+      <button onClick={() => onDeleteItems(item.id)}>❌</button>
     </li>
   );
 };
