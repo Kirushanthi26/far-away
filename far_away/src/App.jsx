@@ -33,7 +33,7 @@ const App = () => {
         onDeleteItems={handleDeleteItems}
         onToggleChange={handleToggleItem}
       />
-      <States />
+      <States items={items} />
     </div>
   );
 };
